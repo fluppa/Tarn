@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="88" viewBox="0 0 65 88">
+  <g id="Logo" transform="translate(150 84) rotate(180)">
+    <g id="Polygon_1" data-name="Polygon 1" transform="translate(85 18)" fill="none">
+      <path d="M32.5,0,65,57H0Z" stroke="none"/>
+      <path d="M 32.5 8.075618743896484 L 6.885219573974609 53 L 58.11478042602539 53 L 32.5 8.075618743896484 M 32.5 0 L 65 57 L 0 57 L 32.5 0 Z" stroke="none" fill="#fb2534"/>
+    </g>
+    <text id="T" transform="translate(130 35) rotate(180)" fill="#fb2534" font-size="47" font-family="MyanmarText, Myanmar Text"><tspan x="0" y="0">T</tspan></text>
+  </g>
+</svg>

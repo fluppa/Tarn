@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="332" height="332" viewBox="0 0 332 332">
+  <g id="Group_21" data-name="Group 21" transform="translate(-794 -5303)">
+    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(794 5303)" fill="none" stroke="#fb2534" stroke-width="2">
+      <circle cx="166" cy="166" r="166" stroke="none"/>
+      <circle cx="166" cy="166" r="165" fill="none"/>
+    </g>
+    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(794 5506)" fill="none" stroke="#fb2534" stroke-width="2">
+      <circle cx="64.5" cy="64.5" r="64.5" stroke="none"/>
+      <circle cx="64.5" cy="64.5" r="63.5" fill="none"/>
+    </g>
+    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(794 5589)" fill="none" stroke="#fb2534" stroke-width="2">
+      <circle cx="23" cy="23" r="23" stroke="none"/>
+      <circle cx="23" cy="23" r="22" fill="none"/>
+    </g>
+    <g id="Logo" transform="translate(1117.448 5562) rotate(180)">
+      <g id="Polygon_1" data-name="Polygon 1" transform="translate(85.448 75)" fill="none">
+        <path d="M71.5,0,143,125H0Z" stroke="none"/>
+        <path d="M 71.5 8.056159973144531 L 6.8961181640625 121 L 136.1038818359375 121 L 71.5 8.056159973144531 M 71.5 0 L 143 125 L 0 125 L 71.5 0 Z" stroke="none" fill="#fb2534"/>
+      </g>
+      <text id="T" transform="translate(184.448 112) rotate(180)" fill="#fb2534" font-size="104" font-family="MyanmarText, Myanmar Text"><tspan x="0" y="0">T</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+@function fontSize($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+$margin: 93px;
+
+$nearly_white: #e2e2e2;
+$red: #d02935;
+$red_light: #fb2534;
+$background: #25201c;
+
+body {
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  margin: 0;
+  background-color: $background;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: fontSize(159px);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: fontSize(74px);
+  font-weight: bold;
+}
+
+h3 {
+  font-size: fontSize(30px);
+  font-weight: bold;
+}
+
+h4 {
+  font-size: fontSize(44px);
+  font-weight: bold;
+}
+
+.decoration-strip {
+  width: 86px;
+  height: 100vh;
+  position: absolute;
+  background-color: $red;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.basic-text {
+  font-size: fontSize(28px);
+}
+
+.decoration {
+  position: absolute;
+  z-index: -1;
+}

@@ -1,0 +1,178 @@
+.landing {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  h1,
+  h3 {
+    z-index: 1;
+  }
+
+  h1 {
+    margin-top: -100px;
+  }
+
+  .main-circles {
+    z-index: 0;
+    position: absolute;
+  }
+}
+
+#about_us {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 1);
+  .about-text {
+    margin-left: $margin;
+    margin-top: $margin;
+    width: 619px; //
+    p {
+      margin-top: $margin/2;
+    }
+  }
+  img {
+    height: 100vh;
+  }
+  .decoration {
+    left: -$margin;
+    top: 0;
+    height: 77%;
+  }
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  h2 {
+    margin-right: $margin;
+    margin-top: $margin;
+  }
+  h4 {
+    color: $red;
+    margin-right: $margin;
+    margin-bottom: $margin/2;
+  }
+  .gallery-strip {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: $margin;
+  }
+  .images-wrapper {
+    position: relative;
+    display: flex;
+    gap: $margin/4;
+    height: 650px;
+  }
+  .gallery-image {
+    max-height: 650px;
+  }
+}
+
+#contact-price {
+  padding-top: $margin;
+
+  .cards-wrapper {
+    margin-top: $margin;
+    margin-bottom: $margin;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+      margin-top: $margin/2;
+      margin-left: $margin/2;
+    }
+    header {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      width: 700px - $margin/2;
+      img {
+        position: absolute;
+        margin-top: $margin/2;
+        right: $margin/2 - 50;
+        width: 100px;
+      }
+    }
+    .card {
+      display: block;
+      width: 700px;
+      height: 460px;
+    }
+    .card-text {
+      display: flex;
+      justify-content: space-between;
+    }
+    .card-description {
+      margin-top: $margin/2;
+      font-size: fontSize(28px);
+      width: 700px - $margin;
+      text-align: right;
+      margin-left: $margin/2;
+      p {
+        margin: 0;
+        margin-top: 10px;
+      }
+    }
+    hr {
+      margin-top: $margin/2;
+      height: 1px;
+
+      width: 700px - $margin;
+    }
+  }
+}
+
+#price {
+  background-color: $red;
+  border: 4px solid $red;
+  hr {
+    background-color: white;
+  }
+}
+
+#contact {
+  position: relative;
+  .decoration {
+    bottom: 0;
+  }
+  border: 4px solid $red_light;
+  hr {
+    border: 1px solid $red_light;
+    background-color: $red_light;
+  }
+}
+
+footer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 332px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $red;
+  font-size: fontSize(20px);
+  margin-top: 2 * $margin;
+  .decoration {
+    z-index: 2;
+  }
+  p {
+    margin: 0;
+    z-index: 3;
+  }
+  hr {
+    z-index: 3;
+    height: 1px;
+    background-color: white;
+    width: 50%;
+  }
+}

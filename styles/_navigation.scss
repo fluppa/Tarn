@@ -1,0 +1,22 @@
+nav {
+  height: 93px;
+  z-index: 10;
+  background-color: #0000000e;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  a {
+    color: $nearly_white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    &:hover {
+      color: white;
+    }
+  }
+}
