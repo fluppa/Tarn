@@ -45,7 +45,7 @@ h4 {
 }
 
 .basic-text {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .decoration {
@@ -165,6 +165,7 @@ nav a:hover {
 #gallery h2 {
   margin-right: 93px;
   margin-top: 93px;
+  margin-bottom: 93px;
 }
 
 #gallery h4 {
@@ -189,6 +190,7 @@ nav a:hover {
 
 #gallery .images-wrapper {
   position: relative;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,5 +385,155 @@ footer hr {
 .button.next::before {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+@media (max-width: 1380px) {
+  nav a {
+    font-size: 1.25rem;
+  }
+  nav img {
+    height: 80%;
+  }
+  .decoration-strip {
+    width: 7%;
+  }
+  .basic-text {
+    font-size: 1.25rem;
+  }
+  h1 {
+    font-size: 7.8125rem;
+  }
+  h2 {
+    font-size: 2.8125rem;
+  }
+  h3 {
+    font-size: 1.5625rem;
+  }
+  h4 {
+    font-size: 2.1875rem;
+  }
+  .main-circles {
+    width: 50%;
+  }
+  .button {
+    width: 70px;
+    height: 70px;
+  }
+  .button::before {
+    width: 70px;
+    height: 70px;
+  }
+  #about_us {
+    position: relative;
+    height: 75vh;
+  }
+  #about_us .about-text {
+    margin-left: 23.25px;
+  }
+  #about_us p {
+    width: 75%;
+  }
+  #about_us .decoration {
+    height: 50%;
+    width: 50%;
+  }
+  #about_us .about-image {
+    height: 100%;
+    max-width: auto;
+  }
+  #contact-price h2 {
+    font-size: 2.5rem;
+  }
+  #contact-price p {
+    font-size: 1.25rem;
+  }
+  #contact-price .cards-wrapper header {
+    width: 300px;
+  }
+  #contact-price .cards-wrapper .card {
+    display: block;
+    width: 400px;
+    height: 40vh;
+  }
+  #contact-price .cards-wrapper hr {
+    margin-top: 10px;
+    width: 75%;
+  }
+  #contact-price .cards-wrapper .card-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 300px;
+  }
+  #contact-price .cards-wrapper .card-description {
+    width: 300px;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 1.25rem;
+  }
+  #contact-price .cards-wrapper .logo-image {
+    display: none;
+  }
+  #contact-price .decoration {
+    display: none;
+  }
+  footer {
+    font-size: 0.9375rem;
+    height: 200px;
+  }
+  footer .decoration {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  nav {
+    display: none;
+  }
+  h1 {
+    font-size: 6.5625rem;
+  }
+  h2 {
+    font-size: 2.1875rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 2.1875rem;
+  }
+  .main-circles {
+    width: 90%;
+  }
+  #about_us {
+    height: 100vh;
+  }
+  #about_us .about-image {
+    display: none;
+  }
+  #about_us .decoration {
+    display: none;
+  }
+  #contact-price .cards-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+  }
+  #contact-price .cards-wrapper .card {
+    width: 100%;
+    border: 0;
+  }
+  .decoration-strip {
+    display: none;
+  }
+  footer {
+    font-size: 0.8125rem;
+  }
+  footer hr {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

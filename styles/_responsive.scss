@@ -1,0 +1,156 @@
+@media (max-width: 1380px) {
+  nav {
+    a {
+      font-size: fontSize(20px);
+    }
+    img {
+      height: 80%;
+    }
+  }
+  .decoration-strip {
+    width: 7%;
+  }
+
+  .basic-text {
+    font-size: fontSize(20px);
+  }
+  h1 {
+    font-size: fontSize(125px);
+  }
+  h2 {
+    font-size: fontSize(45px);
+  }
+  h3 {
+    font-size: fontSize(25px);
+  }
+  h4 {
+    font-size: fontSize(35px);
+  }
+  .main-circles {
+    width: 50%;
+  }
+  .button {
+    width: 70px;
+    height: 70px;
+  }
+  .button::before {
+    width: 70px;
+    height: 70px;
+  }
+  #about_us {
+    position: relative;
+    height: 75vh;
+    .about-text {
+      margin-left: $margin/4;
+    }
+    p {
+      width: 75%;
+    }
+
+    .decoration {
+      height: 50%;
+      width: 50%;
+    }
+    .about-image {
+      height: 100%;
+      max-width: auto;
+    }
+  }
+  #gallery {
+  }
+  #contact-price {
+    h2 {
+      font-size: fontSize(40px);
+    }
+    p {
+      font-size: fontSize(20px);
+    }
+    .cards-wrapper {
+      header {
+        width: 300px;
+      }
+      .card {
+        display: block;
+        width: 400px;
+        height: 40vh;
+      }
+      hr {
+        margin-top: 10px;
+        width: 75%;
+      }
+      .card-text {
+        flex-direction: column;
+        width: 300px;
+      }
+      .card-description {
+        width: 300px;
+        text-align: left;
+        margin-top: 10px;
+        font-size: fontSize(20px);
+      }
+      .logo-image {
+        display: none;
+      }
+    }
+    .decoration {
+      display: none;
+    }
+  }
+  footer {
+    font-size: fontSize(15px);
+    height: 200px;
+    .decoration {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  nav {
+    display: none;
+  }
+
+  h1 {
+    font-size: fontSize(105px);
+  }
+  h2 {
+    font-size: fontSize(35px);
+  }
+  h3 {
+    font-size: fontSize(20px);
+  }
+  h4 {
+    font-size: fontSize(35px);
+  }
+  .main-circles {
+    width: 90%;
+  }
+  #about_us {
+    height: 100vh;
+    .about-image {
+      display: none;
+    }
+    .decoration {
+      display: none;
+    }
+  }
+  #contact-price {
+    .cards-wrapper {
+      flex-direction: column;
+      max-width: 100%;
+      .card {
+        width: 100%;
+        border: 0;
+      }
+    }
+  }
+  .decoration-strip {
+    display: none;
+  }
+  footer {
+    font-size: fontSize(13px);
+    hr {
+      display: none;
+    }
+  }
+}
