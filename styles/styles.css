@@ -507,7 +507,11 @@ footer hr {
     width: 90%;
   }
   #about_us {
-    height: 100vh;
+    height: auto;
+  }
+  #about_us .basic-text {
+    font-size: 2vh;
+    min-height: 40vh;
   }
   #about_us .about-image {
     display: none;
@@ -530,7 +534,11 @@ footer hr {
     display: none;
   }
   footer {
-    font-size: 0.8125rem;
+    font-size: 0.9375rem;
+  }
+  footer p {
+    width: 75vw;
+    text-align: center;
   }
   footer hr {
     display: none;

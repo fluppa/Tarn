@@ -126,7 +126,11 @@
     width: 90%;
   }
   #about_us {
-    height: 100vh;
+    height: auto;
+    .basic-text {
+      font-size: 2vh;
+      min-height: 40vh;
+    }
     .about-image {
       display: none;
     }
@@ -148,7 +152,11 @@
     display: none;
   }
   footer {
-    font-size: fontSize(13px);
+    font-size: fontSize(15px);
+    p {
+      width: 75vw;
+      text-align: center;
+    }
     hr {
       display: none;
     }
