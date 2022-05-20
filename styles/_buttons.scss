@@ -1,9 +1,11 @@
+$buttonSize: 80px;
+
 .button {
   z-index: 1;
   position: absolute;
   display: block;
-  width: 80px;
-  height: 80px;
+  width: $buttonSize;
+  height: $buttonSize;
 
   background-color: rgba(255, 255, 255, 0.062);
   border-radius: 50%;
@@ -11,6 +13,42 @@
   backdrop-filter: blur(2px);
   backdrop-filter: brightness(60%);
   backdrop-filter: contrast(40%);
+}
+
+.splide__arrow.splide__arrow {
+  opacity: 1;
+  width: $buttonSize;
+  height: $buttonSize;
+  background-color: rgba(109, 106, 106, 0.5);
+  border-radius: 50%;
+
+  backdrop-filter: blur(2px);
+  backdrop-filter: brightness(60%);
+  backdrop-filter: contrast(40%);
+}
+
+.splide__arrow.splide__arrow--prev::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/arrow.svg');
+  background-position-y: 55%;
+  transform: rotate(90deg);
+}
+
+.splide__arrow.splide__arrow--next::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/arrow.svg');
+  background-position-y: 55%;
+  transform: rotate(-90deg);
 }
 
 .button::before {
@@ -25,21 +63,89 @@
 }
 
 .scroll {
-  bottom: $margin/2;
+  bottom: $margin/1.7;
 }
 
 .button.prev {
-  bottom: 45%;
+  top: -$buttonSize/2 + $galleryHeight/2;
   left: $margin;
   &::before {
     transform: rotate(90deg);
   }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .button.next {
-  bottom: 45%;
+  top: -$buttonSize/2 + $galleryHeight/2;
   right: $margin;
   &::before {
     transform: rotate(-90deg);
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.language-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 120px;
+  justify-content: space-between;
+  right: $margin * 2;
+  .language-text {
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+    &.active {
+      color: $red;
+      transition: 0.5s;
+    }
+  }
+  .slider {
+    height: 25px;
+    width: 55px;
+    background-color: $red;
+    border-radius: 34px;
+
+    &::after {
+      transform: translateX(0);
+      transition: 0.5s;
+      content: '';
+      display: block;
+      border-radius: 100%;
+      height: 25px;
+      width: 25px;
+      background-color: white;
+    }
+  }
+  .slider:hover {
+    cursor: pointer;
+  }
+  .slider.english {
+    &::after {
+      transform: translateX(55px-25px);
+      transition: 0.5s;
+    }
+  }
+}
+
+@media (max-width: 1380px) {
+  .language-button {
+    right: $margin;
+    width: 100px;
+    .slider {
+      height: 25px;
+      width: 45px;
+      border-radius: 34px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .language-button {
+    position: static;
+    margin-top: $margin;
   }
 }

@@ -1,4 +1,10 @@
 @media (max-width: 1380px) {
+  .scroll {
+    bottom: $margin/4;
+  }
+  .hamburger {
+    display: flex;
+  }
   nav {
     a {
       font-size: fontSize(20px);
@@ -56,8 +62,6 @@
       max-width: auto;
     }
   }
-  #gallery {
-  }
   #contact-price {
     h2 {
       font-size: fontSize(40px);
@@ -106,24 +110,31 @@
 }
 
 @media (max-width: 960px) {
-  nav {
-    display: none;
+  .gallery {
+    //display: none;
+  }
+  .scroll {
+    bottom: $margin/3;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   h1 {
-    font-size: fontSize(105px);
+    font-size: 25vw;
   }
   h2 {
     font-size: fontSize(35px);
   }
   h3 {
-    font-size: fontSize(20px);
+    font-size: 5vw;
   }
   h4 {
     font-size: fontSize(35px);
   }
   .main-circles {
-    width: 90%;
+    width: 85vw;
   }
   #about_us {
     height: auto;
@@ -159,6 +170,20 @@
     }
     hr {
       display: none;
+    }
+  }
+}
+@media (max-width: 371px) {
+  #contact-price {
+    .cards-wrapper {
+      .card {
+        .card-description {
+          max-width: 50%;
+        }
+        p {
+          max-width: 50%;
+        }
+      }
     }
   }
 }

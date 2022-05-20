@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarn</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="app/splide/splide-4.0.2/dist/css/splide.min.css" />
   </head>
   <body>
+    <div class="cover"></div>
     <div class="decoration-strip"></div>
+    <div class="hamburger">
+      <div class="menu-strip"></div>
+    </div>
     <nav>
       <a href="#about_us">O nas</a>
       <a href="#gallery">Galeria</a>
       <img src="img/logo.svg" class="logo-image" />
       <a href="#contact-price">Wycena</a>
       <a href="#contact-price">Kontakt</a>
+      <div class="language-button">
+        <div class="language-text active">PL</div>
+        <a href="/en/index.html" class="slider"></a>
+        <div class="language-text">EN</div>
+      </div>
     </nav>
     <section class="landing">
       <img class="main-circles" src="img/main_circles.svg" />
@@ -37,19 +47,64 @@
       <img class="about-image" src="img/about_image.png" />
     </section>
     <section id="gallery">
+      <div class="wrapper">
+        <section
+          class="splide"
+          id="splide-gallery"
+          aria-label="Splide Basic HTML Example"
+          data-splide='{"type":"loop","perPage":3}'
+        >
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev"></button>
+            <button class="splide__arrow splide__arrow--next"></button>
+          </div>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <a data-fslightbox="gallery" href="img/images/1.png"
+                  ><img class="gallery-img" src="img/images/1.png"
+                /></a>
+              </li>
+              <li class="splide__slide">
+                <a data-fslightbox="gallery" href="img/images/2.png"
+                  ><img class="gallery-img" src="img/images/2.png"
+                /></a>
+              </li>
+              <li class="splide__slide">
+                <a data-fslightbox="gallery" href="img/images/3.png"
+                  ><img class="gallery-img" src="img/images/3.png"
+                /></a>
+              </li>
+              <li class="splide__slide">
+                <a data-fslightbox="gallery" href="img/images/4.png"
+                  ><img class="gallery-img" src="img/images/4.png"
+                /></a>
+              </li>
+              <li class="splide__slide">
+                <a data-fslightbox="gallery" href="img/images/5.jpg"
+                  ><img class="gallery-img" src="img/images/5.jpg"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- <section id="gallery">
       <h2>Nasze realizacje</h2>
       <div class="gallery-strip">
         <!--<h4>2022</h4>-->
+    <!-- <div class="button prev"></div>
         <div class="images-wrapper">
-          <a href="#" class="button prev"></a>
-          <img class="gallery-img" src="img/1.png" />
-          <img class="gallery-img" src="img/2.png" />
-          <img class="gallery-img" src="img/3.png" />
-          <img class="gallery-img" src="img/4.png" />
-          <a href="#" class="button next"></a>
+          <img class="gallery-img" src="img/images/1.png" />
+          <img class="gallery-img" src="img/images/2.png" />
+          <img class="gallery-img" src="img/images/3.png" />
+          <img class="gallery-img" src="img/images/4.png" />
+          <img class="gallery-img" src="img/images/5.jpg" />
         </div>
-      </div>
-      <!--<div class="gallery-strip">
+        <div class="button next"></div>
+      </div>-->
+    <!--<div class="gallery-strip">
         <h4>2021</h4>
         <div class="images-wrapper">
           <a href="#" class="button prev"></a>
@@ -59,8 +114,8 @@
           <img class="gallery-img" src="img/4.png" />
           <a href="#" class="button next"></a>
         </div>
-      </div>-->
-    </section>
+      </div>
+    </section>-->
     <section id="contact-price">
       <div class="cards-wrapper">
         <section class="card" id="price">
@@ -94,5 +149,18 @@
       <p>Copyright &copy; 2022 Tarn. All rights reserved.</p>
     </footer>
     <script src="app/scroll.js"></script>
+    <script src="app/menu.js"></script>
+    <script src="app/language_slider.js" defer></script>
+    <script src="app/fslightbox/fslightbox.js" defer></script>
+    <script src="app/splide/splide-4.0.2/dist/js/splide.min.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#splide-gallery', {
+          autoWidth: true,
+          gap: '2rem',
+          pagination: false,
+        }).mount()
+      })
+    </script>
   </body>
 </html>

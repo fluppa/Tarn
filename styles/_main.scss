@@ -1,10 +1,12 @@
 .landing {
   color: white;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+
   h1,
   h3 {
     z-index: 1;
@@ -43,39 +45,6 @@
     left: -$margin;
     top: 0;
     height: 77%;
-  }
-}
-
-#gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
-  h2 {
-    margin-right: $margin;
-    margin-top: $margin;
-    margin-bottom: $margin;
-  }
-  h4 {
-    color: $red;
-    margin-right: $margin;
-    margin-bottom: $margin/2;
-  }
-  .gallery-strip {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-bottom: $margin;
-  }
-  .images-wrapper {
-    position: relative;
-    width: 100%;
-    display: flex;
-    gap: $margin/4;
-    height: 650px;
-  }
-  .gallery-image {
-    max-height: 650px;
   }
 }
 
