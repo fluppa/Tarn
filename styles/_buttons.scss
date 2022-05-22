@@ -7,7 +7,8 @@ $buttonSize: 80px;
   width: $buttonSize;
   height: $buttonSize;
 
-  background-color: rgba(255, 255, 255, 0.062);
+  //background-color: rgba(255, 255, 255, 0.062);
+  background-color: rgba(151, 143, 143, 0.462);
   border-radius: 50%;
 
   backdrop-filter: blur(2px);
@@ -147,5 +148,13 @@ $buttonSize: 80px;
   .language-button {
     position: static;
     margin-top: $margin;
+  }
+  .button.prev {
+    top: -$buttonSize/2 + $galleryHeight/4;
+    left: $margin/2;
+  }
+  .button.next {
+    top: -$buttonSize/2 + $galleryHeight/4;
+    right: $margin/2;
   }
 }

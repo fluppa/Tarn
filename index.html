@@ -47,13 +47,32 @@
       <img class="about-image" src="img/about_image.png" />
     </section>
     <section id="gallery">
+      <div class="button prev"></div>
+      <section class="images-wrapper">
+        <a data-fslightbox="gallery" href="img/images/1.png"
+          ><img class="gallery-img" src="img/images/1.png"
+        /></a>
+        <a data-fslightbox="gallery" href="img/images/2.png"
+          ><img class="gallery-img" src="img/images/2.png"
+        /></a>
+        <a data-fslightbox="gallery" href="img/images/3.png"
+          ><img class="gallery-img" src="img/images/3.png"
+        /></a>
+        <a data-fslightbox="gallery" href="img/images/1.png"
+          ><img class="gallery-img" src="img/images/1.png"
+        /></a>
+        <a data-fslightbox="gallery" href="img/images/1.png"
+          ><img class="gallery-img" src="img/images/1.png"
+        /></a>
+        <a data-fslightbox="gallery" href="img/images/5.jpg"
+          ><img class="gallery-img" src="img/images/5.jpg"
+        /></a>
+      </section>
+      <div class="button next"></div>
+    </section>
+    <!--<section id="gallery">
       <div class="wrapper">
-        <section
-          class="splide"
-          id="splide-gallery"
-          aria-label="Splide Basic HTML Example"
-          data-splide='{"type":"loop","perPage":3}'
-        >
+        <section class="splide">
           <div class="splide__arrows">
             <button class="splide__arrow splide__arrow--prev"></button>
             <button class="splide__arrow splide__arrow--next"></button>
@@ -80,16 +99,14 @@
                   ><img class="gallery-img" src="img/images/4.png"
                 /></a>
               </li>
-              <li class="splide__slide">
-                <a data-fslightbox="gallery" href="img/images/5.jpg"
-                  ><img class="gallery-img" src="img/images/5.jpg"
-                /></a>
-              </li>
+              <li class="splide__slide"><img class="gallery-img" src="img/images/5.jpg" /></li>
             </ul>
           </div>
         </section>
       </div>
     </section>
+    -->
+
     <!-- <section id="gallery">
       <h2>Nasze realizacje</h2>
       <div class="gallery-strip">
@@ -103,7 +120,7 @@
           <img class="gallery-img" src="img/images/5.jpg" />
         </div>
         <div class="button next"></div>
-      </div>-->
+      </div>
     <!--<div class="gallery-strip">
         <h4>2021</h4>
         <div class="images-wrapper">
@@ -150,18 +167,8 @@
     </footer>
     <script src="app/scroll.js"></script>
     <script src="app/menu.js"></script>
-    <script src="app/language_slider.js" defer></script>
-    <script src="app/fslightbox/fslightbox.js" defer></script>
-    <script src="app/splide/splide-4.0.2/dist/js/splide.min.js" defer></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        new Splide('#splide-gallery', {
-          autoWidth: true,
-
-          gap: '2rem',
-          pagination: false,
-        }).mount()
-      })
-    </script>
+    <script src="app/language_slider.js"></script>
+    <script src="app/fslightbox/fslightbox.js"></script>
+    <script src="app/gallery.js"></script>
   </body>
 </html>
